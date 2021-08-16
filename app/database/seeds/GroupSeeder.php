@@ -64,7 +64,7 @@ class GroupSeeder extends Seeder
             'abbreviation' => 'ALDE',
         ],
         [
-            'code' => 'EFN',
+            'code' => 'ENF',
             'name' => 'Europe of Nations and Freedom',
             'abbreviation' => 'ENF',
         ],
