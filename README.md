@@ -47,7 +47,11 @@ We’re using [Ansible](https://ansible.org) to manage server provisioning and d
 
 * [**abgeordnetenwatch.eu**](https://www.abgeordnetenwatch.de/eu/abstimmungen) is a German NGO that allows citizen to publicly ask questions elected representatives in the federal and state parliaments as well as the European Parliament questions. abgeordnetenwatch.eu also includes voting records for editorially selected votes in the European Parliament. Those are however limited to German MEPs.
 
-* [**VoteWatch Europe**](https://votewatch.eu) maintains a database of vote results for the current and many past legislatures. However, not all vote results are publicly accessible.
+* [**VoteWatch Europe**](https://votewatch.eu) used to maintain a database of vote results for the current and many past legislatures. However, not all vote results were publicly accessible. It closed in 2022 but has been replaced by:
+
+* [**EU Matrix**](https://eumatrix.eu) provides European Union analyses, including for key votes.  
+
+* [**MEP watch**](https://mepwatch.eu/) is an open-source project that allow to see the votes of all MEPs, by countries, for texts voted in the current and past legislatures.
 
 ## Licenses
 
