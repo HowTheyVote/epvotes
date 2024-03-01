@@ -25,7 +25,7 @@
         "laravel/framework": "^8.0",
         "laravel/scout": "^9.2",
         "laravel/tinker": "^2.0",
-        "meilisearch/meilisearch-php": "0.24.2",
+        "meilisearch/meilisearch-php": "1.2.1",
         "sentry/sentry-laravel": "^2.4",
         "silber/page-cache": "dev-csv-support",
         "spatie/laravel-enum": "^3",
