@@ -18,6 +18,30 @@ it('has a display title', function () {
     expect($vote->display_title)->toEqual('A nice title');
 });
 
+it('includes amendment in display title', function () {
+    $vote = Vote::factory([
+        'type' => VoteTypeEnum::AMENDMENT(),
+        'amendment' => 5,
+        'vote_collection_id' => VoteCollection::factory([
+            'title' => 'A nice title',
+        ]),
+    ])->make();
+
+    expect($vote->display_title)->toEqual('A nice title (Amendment 5)');
+});
+
+it('includes separate vote in display title', function () {
+    $vote = Vote::factory([
+        'type' => VoteTypeEnum::SEPARATE(),
+        'subject' => '§ 1',
+        'vote_collection_id' => VoteCollection::factory([
+            'title' => 'A nice title',
+        ]),
+    ])->make();
+
+    expect($vote->display_title)->toEqual('A nice title (§ 1)');
+});
+
 it('returns related votes', function () {
     $voteCollection = VoteCollection::factory()->create();
 

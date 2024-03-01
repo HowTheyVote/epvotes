@@ -67,7 +67,24 @@ class Vote extends Model
 
     public function getDisplayTitleAttribute()
     {
-        return $this->voteCollection->title;
+        $title = $this->voteCollection->title;
+        $suffix = null;
+
+        if ($this->isAmendmentVote()) {
+            $suffix = "Amendment {$this->amendment}";
+        }
+
+        if ($this->isSeparateVote()) {
+            $suffix = $this->split_part
+                ? "{$this->subject}/{$this->split_part}"
+                : $this->subject;
+        }
+
+        if ($suffix) {
+            return "{$title} ({$suffix})";
+        }
+
+        return $title;
     }
 
     public function getSubtitleAttribute()
