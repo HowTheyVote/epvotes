@@ -12,7 +12,7 @@ flake8-black = "^0.3.3"
 beautifulsoup4 = "^4.11.1"
 lxml = "^4.9.1"
 werkzeug = "^2.2.3"
-sentry-sdk = {extras = ["flask"], version = "^1.19.1"}
+sentry-sdk = {extras = ["flask"], version = "^1.26.0"}
 python-dotenv = "^0.21.0"
 coverage = "^7.2"
 pytest-cov = "^4.0.0"
