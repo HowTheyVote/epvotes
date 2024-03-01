@@ -10,7 +10,7 @@
     :subtitle="$member->group->abbreviation.' · '.$member->country->label"
     :position="$position"
     :url="route('members.show', ['member' => $member])"
-    search-key="{{ $member->full_name }} {{ $member->country->label }}"
+    search-key="{{ $member->full_name }} {{ $member->country->label }} {{ $member->group->abbreviation }} {{ $member->group->name }}"
     :filter-key="$position->label"
     {{ $attributes }}
 />

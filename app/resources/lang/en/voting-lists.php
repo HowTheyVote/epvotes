@@ -17,7 +17,7 @@ return [
 
     'members' => [
         'title' => 'MEPs',
-        'search-placeholder' => 'Search by name or country',
+        'search-placeholder' => 'Search by name, country, or group',
         'show-more' => 'Show all MEPs',
     ],
 
